@@ -1,0 +1,115 @@
+.offcanvas.offcanvas-start {
+  left: 201vw !important;
+  transition: transform 0.3s ease-out !important;
+  width: 60vw !important;
+}
+.offcanvas.offcanvas-start.show {
+  transform: translateX(-160vw) !important;
+}
+
+.BurgerQueen_logo {
+  width: 45vw;
+  height: 30vw;
+  position: absolute;
+  top: 7vh;
+  left: calc((100% - 45vw) / 2);
+}
+
+body {
+  width: 100vw;
+}
+body header {
+  background-color: #d6110a;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body header .offcanvas {
+  z-index: 10;
+  background-color: rgba(250, 250, 250, 0.8);
+  box-shadow: inset 3px 0 3px rgba(250, 250, 250, 0.9);
+  color: #171120;
+}
+body header .offcanvas .offcanvas-body .list-group {
+  display: flex;
+  flex-direction: column;
+}
+body header .offcanvas .offcanvas-body .list-group a {
+  background-color: transparent;
+  text-align: center;
+  border: 0;
+}
+body header .offcanvas .offcanvas-body .list-group a:active {
+  background-color: #d6110a;
+}
+body header .offcanvas .offcanvas-body .list-group a:not(:last-child) {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.9);
+}
+body header .navbar {
+  z-index: 10;
+  background-color: #e3e3e3;
+  display: inline-flex;
+  width: 100%;
+  opacity: 0.6;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 15px;
+}
+body header .navbar .nav-tabs {
+  flex-basis: 100%;
+  flex-direction: row;
+}
+body header .navbar .nav-item {
+  flex: 1 1 20%;
+}
+body header .navbar .nav-item a {
+  width: 100%;
+  color: #171120;
+  border-radius: 0;
+  transform-origin: bottom;
+  background-color: white;
+  padding-inline: 15px;
+  transition: background-color 0.5 linear;
+}
+body header .navbar .nav-item a:active {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+body header .navbar .nav-item .btn {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background-color: white;
+}
+body header .navbar .nav-item .btn:active {
+  background-color: #d6110a;
+}
+body header .navbar .nav-item .btn i {
+  font-size: 30px;
+  color: #171120;
+  background-color: white;
+}
+body header .carousel.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+body header .carousel.slide .carousel-caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #171120;
+  opacity: 0.4;
+  left: 0;
+  top: 0;
+}
+body header .carousel.slide .carousel-caption p {
+  top: 59%;
+  position: absolute;
+  color: white !important;
+  z-index: 10;
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
