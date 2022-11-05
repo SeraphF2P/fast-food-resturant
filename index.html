@@ -38,6 +38,13 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -45,7 +52,7 @@
     <header>
       <div
         id="carouselExampleDark"
-        class="carousel slide"
+        class="carousel slide section"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -71,10 +78,19 @@
           ></button>
         </div>
         <div class="carousel-inner">
+          <div class="logo">
+            <img
+              loding="lazy"
+              class="BurgerQueen_logo"
+              src="./BurgerQueen_logo.svg"
+              alt="BurgerQueen_logo"
+            />
+          </div>
           <div class="carousel-item active" data-bs-interval="10000">
             <img
+              loding="lazy"
               src="https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&w=600"
-              class="d-block w-100 img-fluid"
+              class="d-block w-100"
               alt="..."
             />
             <div class="carousel-caption d-flex align-items-center flex-column">
@@ -85,8 +101,9 @@
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
+              loding="lazy"
               src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              class="d-block w-100 img-fluid"
+              class="d-block w-100"
               alt="..."
             />
             <div class="carousel-caption d-flex align-items-center flex-column">
@@ -97,8 +114,9 @@
           </div>
           <div class="carousel-item">
             <img
+              loding="lazy"
               src=" https://images.pexels.com/photos/5864595/pexels-photo-5864595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              class="d-block w-100 img-fluid"
+              class="d-block w-100"
               alt="..."
             />
             <div class="carousel-caption d-flex align-items-center flex-column">
@@ -127,19 +145,40 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <section>
+        <img
+          class="vertical_ad"
+          loding="lazy"
+          src="https://images.pexels.com/photos/1633559/pexels-photo-1633559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+        />
+        <div class="horizontal_ad">
+          <img
+            loding="lazy"
+            src="https://images.pexels.com/photos/6777500/pexels-photo-6777500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+          <img
+            loding="lazy"
+            src="https://images.pexels.com/photos/6777500/pexels-photo-6777500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+      </section>
       <nav class="navbar">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="Home" href="#">Active</a>
+            <a class="nav-link active" aria-current="Home" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Locations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
             <button
@@ -195,13 +234,8 @@
           </div>
         </div>
       </nav>
-      <img
-        class="BurgerQueen_logo"
-        src="./BurgerQueen_logo.svg"
-        alt="BurgerQueen_logo"
-      />
     </header>
-    <main></main>
+    <!-- <main></main> -->
     <footer></footer>
 
     <script

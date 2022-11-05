@@ -7,109 +7,170 @@
   transform: translateX(-160vw) !important;
 }
 
-.BurgerQueen_logo {
-  width: 45vw;
-  height: 30vw;
+.logo {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 7vh;
-  left: calc((100% - 45vw) / 2);
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo .BurgerQueen_logo {
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  z-index: 10;
 }
 
 body {
   width: 100vw;
 }
 body header {
+  display: grid;
+  grid-template-areas: "a " "b";
+  grid-template-rows: auto auto;
   background-color: #d6110a;
   width: 100vw;
-  height: 100vh;
-  position: absolute;
+  max-height: 100vh;
+  position: relative;
   left: 0;
   top: 0;
 }
-body header .offcanvas {
+body header .section {
+  position: relative;
+  width: 100%;
+  grid-area: a;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+body header .section .carousel-caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #555;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+}
+body header .section .carousel-caption p {
+  bottom: 12%;
+  position: absolute;
+  color: white;
+  font-size: 1rem;
+  z-index: 9999;
+}
+body header .section .carousel.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+body header .section .carousel.slide .carousel-inner {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+body header .section .carousel.slide .carousel-inner .carousel-item img {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+body header section {
+  grid-area: b;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+}
+body header section .horizontal_ad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header section .horizontal_ad img {
+  width: 100%;
+}
+body header section .vertical_ad {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+body .offcanvas {
   z-index: 10;
   background-color: rgba(250, 250, 250, 0.8);
   box-shadow: inset 3px 0 3px rgba(250, 250, 250, 0.9);
   color: #171120;
 }
-body header .offcanvas .offcanvas-body .list-group {
+body .offcanvas .offcanvas-body .list-group {
   display: flex;
   flex-direction: column;
 }
-body header .offcanvas .offcanvas-body .list-group a {
+body .offcanvas .offcanvas-body .list-group a {
   background-color: transparent;
   text-align: center;
   border: 0;
 }
-body header .offcanvas .offcanvas-body .list-group a:active {
+body .offcanvas .offcanvas-body .list-group a:active {
   background-color: #d6110a;
 }
-body header .offcanvas .offcanvas-body .list-group a:not(:last-child) {
+body .offcanvas .offcanvas-body .list-group a:not(:last-child) {
   border-bottom: 1px solid rgba(200, 200, 200, 0.9);
 }
-body header .navbar {
+body .navbar {
   z-index: 10;
-  background-color: #e3e3e3;
+  position: fixed;
+  top: 0;
   display: inline-flex;
   width: 100%;
+  height: 15px;
+  background-color: #e3e3e3;
   opacity: 0.6;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  height: 15px;
 }
-body header .navbar .nav-tabs {
+body .navbar .nav-tabs {
   flex-basis: 100%;
   flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
 }
-body header .navbar .nav-item {
-  flex: 1 1 20%;
+body .navbar .nav-tabs .nav-item {
+  flex-basis: 20%;
+  height: 100%;
 }
-body header .navbar .nav-item a {
-  width: 100%;
+body .navbar .nav-tabs .nav-item a {
   color: #171120;
   border-radius: 0;
-  transform-origin: bottom;
-  background-color: white;
-  padding-inline: 15px;
-  transition: background-color 0.5 linear;
+  transform-origin: bottom center;
+  background-position: 50% 50%;
+  background-color: #e3e3e3;
+  padding-inline: 5px;
+  transition: background-color 0.5s linear, background-position 0.5s linear;
+  text-align: center;
 }
-body header .navbar .nav-item a:active {
+body .navbar .nav-tabs .nav-item a.active {
   background-color: transparent;
+  color: #fbe03b;
   border: 1px solid transparent;
 }
-body header .navbar .nav-item .btn {
+body .navbar .nav-tabs .nav-item .btn {
   width: 100%;
   border: none;
   border-radius: 0;
-  background-color: white;
+  background-color: #e3e3e3;
 }
-body header .navbar .nav-item .btn:active {
+body .navbar .nav-tabs .nav-item .btn:active {
   background-color: #d6110a;
 }
-body header .navbar .nav-item .btn i {
-  font-size: 30px;
-  color: #171120;
-  background-color: white;
-}
-body header .carousel.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-}
-body header .carousel.slide .carousel-caption {
+body .navbar .nav-tabs .nav-item .btn i {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #171120;
-  opacity: 0.4;
-  left: 0;
-  top: 0;
-}
-body header .carousel.slide .carousel-caption p {
-  top: 59%;
-  position: absolute;
-  color: white !important;
-  z-index: 10;
-  opacity: 1;
+  font-size: 27.5px;
+  color: #171120;
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */

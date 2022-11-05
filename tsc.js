@@ -12,3 +12,11 @@ offcanvas_toggle_btn.onclick = () => {
         offcanves_close_btn.click();
     });
 };
+function activate() {
+    nav_link.forEach(link => { link.classList.remove('active'); });
+    this.classList.add('active');
+}
+const nav_link = document.querySelectorAll('.nav-link');
+nav_link.forEach(link => {
+    link.addEventListener('click', activate);
+});
